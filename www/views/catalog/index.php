@@ -5,18 +5,7 @@
             <div class="col-sm-3">
                 <div class="left-sidebar">
                     <h2>Каталог</h2>
-                    <div class="panel-group category-products">
-
-                        <?php foreach($categories as $item){ ?>
-
-                            <?php include (ROOT . "/views/layouts/category_sidebar.php");?>
-
-                        <?php }?>
-
-
-
-                    </div>
-
+                    <?php include(ROOT."/views/layouts/category_sidebar.php");?>
                 </div>
             </div>
 
@@ -28,7 +17,7 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="/php_learn/images/<?= $product['image']; ?>" alt="" />
+                                        <img src="/images/<?= $product['image']; ?>" alt="" />
                                         <h2><?= $product['price']; ?></h2>
                                         <p><?= $product['name']; ?></p>
                                         <a href="/php_learn/product/<?= $product['id']; ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>

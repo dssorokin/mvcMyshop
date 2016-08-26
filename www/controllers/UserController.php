@@ -40,7 +40,7 @@ class UserController
             if($userId){
                 User::Auth($userId);
 
-                header("Location: /php_learn/cabinet/");
+                header("Location: /cabinet/");
             }else{
 
             }
@@ -53,6 +53,6 @@ class UserController
 
     public function actionLogout(){
         unset($_SESSION['userId']);
-        header("Location: /php_learn");
+        header("Location: /");
     }
 }

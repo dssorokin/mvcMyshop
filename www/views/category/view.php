@@ -11,7 +11,7 @@
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><a href="/php_learn/category/<?= $item['id']; ?>"><?= $item['name']; ?></a></h4>
+                                    <h4 class="panel-title"><a href="/category/<?= $item['id']; ?>"><?= $item['name']; ?></a></h4>
                                 </div>
                             </div>
 
@@ -32,7 +32,7 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="/php_learn/images/<?= $product['image']; ?>" alt="" />
+                                        <img src="/images/<?= $product['image']; ?>" alt="" />
                                         <h2><?= $product['price']; ?></h2>
                                         <p><?= $product['name']; ?></p>
                                         <a href="/php_learn/product/<?= $product['id']; ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
